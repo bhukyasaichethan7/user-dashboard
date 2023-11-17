@@ -1,22 +1,20 @@
-<template>
-  <div>
-    <!-- Tabs for User Details and Account Creation -->
-    <!-- Include UserDetailsTable and AccountCreationForm components -->
-  </div>
-</template>
+// Dashboard.js
+import React from 'react';
+import UserTable from './UserTable';
+import AccountCreationForm from './AccountCreationForm';
 
-<script>
-import UserDetailsTable from '@/components/UserDetails/UserDetailsTable.vue';
-import AccountCreationForm from '@/components/AccountCreation/AccountCreationForm.vue';
-
-export default {
-  components: {
-    UserDetailsTable,
-    AccountCreationForm,
-  },
+const Dashboard = () => {
+  return (
+    <div>
+      <h1>User Management Dashboard</h1>
+      <div>
+        <UserTable />
+      </div>
+      <div>
+        <AccountCreationForm />
+      </div>
+    </div>
+  );
 };
-</script>
 
-<style>
-/* Dashboard layout styling */
-</style>
+export default Dashboard;
